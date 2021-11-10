@@ -1,0 +1,24 @@
+import requests
+import json
+import pandas as pd
+import logging
+import time
+
+logger = logging.getLogger("root")
+logger.setLevel(logging.DEBUG)
+# create console handler
+ch = logging.StreamHandler()
+ch.setLevel(logging.DEBUG)
+logger.addHandler(ch)
+url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=40.821860,14.428992&key="
+
+r = requests.get(url)
+
+
+if r.status_code != requests.codes.ok:
+    r.raise_for_status()
+
+results = json.loads(r.text)
+df = pd.io.json.json_normalize(results['results'], 'address_components')
+row2=df.iloc[1:4,0]
+print(row2)
