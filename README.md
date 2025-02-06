@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @eth-atwood
-- 👀 I’m interested in financial literacy, fintech, traveltech, sustainability, web3, intersection of tech, art and nature
+- 👀 I’m interested in nutrition, financial literacy, fintech, traveltech, sustainability, web3, intersection of tech, art and nature
 - 🌱 I’m currently learning javascript, python
 - 💞️ I’m looking to collaborate
 - 📫 ethatwood@gmail.com
